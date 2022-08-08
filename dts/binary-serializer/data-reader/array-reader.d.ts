@@ -7,7 +7,7 @@ export declare class ArrayDataReader implements DataReader {
     private _byteOffset;
     private _stringDecoder;
     constructor(buffer: ArrayBuffer);
-    get position(): number;
+    readonly position: number;
     readByte(): number;
     readSByte(): number;
     readBytes(length: number): ArrayBuffer;
